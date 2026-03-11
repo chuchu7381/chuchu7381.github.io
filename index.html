@@ -44,12 +44,17 @@
 
   .row{display:flex; flex-wrap:wrap; gap:10px; align-items:stretch; margin-top:8px}
   /* 淺灰底、黑字的主要按鈕 */
-  .btn{
+.btn{
     display:inline-flex; align-items:center; justify-content:center; gap:8px;
-    padding:12px 14px; border-radius:12px; border:2px solid var(--border);
-    background:var(--btn-gray); color:#000000; font-weight:800; cursor:pointer; white-space:nowrap;
+    padding:12px 14px; border-radius:12px;
+    border:2px solid #FF9800;   /* 橘色邊框 */
+    background:#FF9800;         /* 橘色底 */
+    color:#fff;                 /* 白字更清楚 */
+    font-weight:800;
+    cursor:pointer;
+    white-space:nowrap;
     transition:.15s;
-  }
+}
   .btn:hover{transform:translateY(-2px)}
   .section-title{
     font-size:11px; font-weight:700; color:#999; letter-spacing:1.5px;
@@ -157,3 +162,4 @@ document.getElementById("openSelectedBtn").onclick = () => {
 </script>
 </body>
 </html>
+
